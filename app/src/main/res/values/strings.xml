@@ -1,0 +1,81 @@
+<resources>
+<string name="app_name">Submission Aplikasi Story App</string>
+
+<!-- Layout Launcher Activity Resources String  -->
+<string name="launcher_first_text">Selamat datang di Story App</string>
+<string name="dummy_text_lorem">Aplikasi ini adalah Aplikasi tentang Story App</string>
+<string name="get_started">Mulai Sekarang</string>
+<string name="content_image_launcher">Gambar Logo</string>
+
+    <!-- Layout Splash Activity Resources String  -->
+    <string name="description_content_splashscreen">Story User App Opening Image</string>
+
+<!-- Layout Register Activity Resources String  -->
+<string name="greeting_authentication_page"> Selamat Datang di</string>
+<string name="app_authentication_page">Story App</string>
+<string name="label_authentication_register">Register</string>
+<string name="image_authentication_page">Animasi gambar logo</string>
+<string name="label_authentication_name">Masukkan Nama Anda</string>
+<string name="label_authentication_email">Masukkan Email Anda</string>
+<string name="label_authentication_password">Masukkan Password Anda</string>
+<string name="label_authentication_register_button">Tekan tombol untuk register</string>
+<string name="label_authentication_register_question">Sudah punya akun?</string>
+<string name="label_authentication_login_with_underline"><u>Masuk</u></string>
+
+<!-- Layout Login Activity Resources String  -->
+<string name="label_authentication_login">Login</string>
+<string name="label_authentication_login_button">Tekan tombol untuk Login</string>
+<string name="label_authentication_login_question">Belum punya akun?</string>
+<string name="label_authentication_register_with_underline"><u>Daftar</u></string>
+
+<!--  Layout Register & Login Activity Resources String  -->
+<string name="UI_warning_empty_field">Field cannot be empty</string>
+<string name="UI_warning_empty_name">Name cannot be empty</string>
+<string name="UI_warning_empty_email">Email cannot be empty</string>
+<string name="UI_warning_invalid_email">Invalid email format</string>
+<string name="UI_warning_empty_password">Password cannot be empty</string>
+<string name="UI_warning_invalid_password">Password must be at least 8 characters</string>
+
+<!--  Layout Main Activity Resources String  -->
+<string name="label_greeting_user">Hi, %1$s!</string>
+<string name="content_description_add_new_story">Add new story</string>
+<string name="UI_action_bar">User Story</string>
+
+<!--  Layout Item Story Resources String  -->
+<string name="image_story_preview">Story Image Preview</string>
+<string name="label_story_profile">Story Profile</string>
+
+<!--  Layout Detail Story Resources String  -->
+<string name="label_detail_story_title">Detail Story Title</string>
+<string name="label_detail_story_image">Full image story user</string>
+
+<!--  Layout NewStory Resources String   -->
+<string name="content_description_image_preview_story">Preview Gambar yang anda unggah</string>
+<string name="button_text_camera">Kamera</string>
+<string name="button_text_gallery">Galeri</string>
+<string name="button_text_upload">Unggah Cerita</string>
+<string name="story_description_hint_edit_text">Deskripsi cerita…</string>
+<string name="UI_info_pick_information">Pemberitahuan, Pilih salah satu gambar</string>
+
+<!--  New Story Activity Resources String  -->
+<string name="UI_denied_gallery_permission">Izin akses untuk galeri ditolak</string>
+<string name="UI_denied_camera_permission">Izin akses untuk kamera ditolak</string>
+<string name="UI_success_upload_story">Berhasil mengunggah cerita</string>
+<string name="UI_choose_image">Pilih Gambar</string>
+<string name="UI_action_bar_new_story">Add Your Own Story</string>
+
+<!--  main menu resources string  -->
+<string name="UI_logout_button">Logout Logo</string>
+
+    <string name="UI_loading_text">Coba lagi</string>
+    <string name="UI_maps_logo">See location on maps</string>
+    <string name="UI_setting_logo">Setting Logo</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+
+<string name="people_story">Image People Story</string>
+    <string name="UI_error_upload_story">wajib mengisi deskripsi</string>
+    <string name="UI_description_required">wajib mengisi deskripsi</string>
+</resources>

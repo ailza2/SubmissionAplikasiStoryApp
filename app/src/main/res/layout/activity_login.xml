@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLauncher"
+    tools:context=".activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view_animated"
+        android:layout_width="267dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/image_authentication_page"
+        android:src="@drawable/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greeting_view_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="@string/greeting_authentication_page"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_animated" />
+
+    <TextView
+        android:id="@+id/app_view_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/app_authentication_page"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_view_label" />
+
+    <TextView
+        android:id="@+id/login_authentication_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_authentication_login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_view_label" />
+
+    <com.dicoding.submissionaplikasistoryapp.costumui.EmailEditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/colorPrimary"
+        android:hint="@string/label_authentication_email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_authentication_label" />
+
+    <com.dicoding.submissionaplikasistoryapp.costumui.PasswordEditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:hint="@string/label_authentication_password"
+        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_text" />
+
+    <com.dicoding.submissionaplikasistoryapp.costumui.Button
+        android:id="@+id/login_button"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/label_authentication_login_button"
+        android:text="@string/label_authentication_login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button">
+
+        <TextView
+            android:id="@+id/register_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_authentication_login_question"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/hyperlink_register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/label_authentication_register_with_underline"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/progressBar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
